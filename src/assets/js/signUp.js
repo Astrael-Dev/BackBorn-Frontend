@@ -1,7 +1,7 @@
+// Show image preview in the circle
 const imageCircle = document.getElementById('imageCircle');
 const fileInput = document.getElementById('profile_picture');
 
-// Show image preview in the circle
 fileInput.addEventListener('change', function() {
     if (fileInput.files && fileInput.files[0]) {
         const reader = new FileReader();
@@ -11,7 +11,8 @@ fileInput.addEventListener('change', function() {
                 img = document.createElement('img');
                 imageCircle.appendChild(img);
                 // Hide the SVG icon when image is present
-                imageCircle.querySelector('svg').style.display = 'none';
+                const svg = imageCircle.querySelector('svg');
+                if (svg) svg.style.display = 'none';
             }
             img.src = e.target.result;
         };
@@ -35,10 +36,19 @@ document.getElementById('signupForm').addEventListener('submit', async function(
             method: 'POST',
             body: formData
         });
+        const result = await response.json();
         if (response.ok) {
+            // Store token and profile_picture in localStorage
+            if (result.token) {
+                localStorage.setItem('token', result.token);
+            }
+            if (result.profile_picture) {
+                // If backend returns a relative path, prepend the backend URL
+                const backendUrl = 'https://backborn-backend.onrender.com';
+                localStorage.setItem('profile_picture', backendUrl + result.profile_picture);
+            }
             window.location.href = 'thank-you.html';
         } else {
-            const result = await response.json();
             alert(result.message || 'Sign up failed.');
         }
     } catch (err) {
@@ -46,6 +56,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
     }
 });
 
+// Password visibility toggle
 const togglePassword = document.getElementById('togglePassword');
 const passwordInput = document.getElementById('passwordInput');
 
