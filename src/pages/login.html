@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackBorn - Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="icon" type="image/png" href="../assets/img/icon.png">
+</head>
+<body>
+    <main>
+        <img id="projectLogo" src="../assets/img/icon.png" alt="Project Logo">
+        <h1 id="LogInTitle">Log in to <strong>BackBorn</strong></h1>
+        <form id="loginForm" class="login-flex">
+            <input type="email" name="email" placeholder="Email" required />
+            <div class="password-wrapper">
+                <input type="password" name="password" placeholder="Password" required id="loginPasswordInput" />
+                <span class="toggle-password" id="toggleLoginPassword">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-closed-icon lucide-eye-closed"><path d="m15 18-.722-3.25"/><path d="M2 8a10.645 10.645 0 0 0 20 0"/><path d="m20 15-1.726-2.05"/><path d="m4 15 1.726-2.05"/><path d="m9 18 .722-3.25"/></svg>
+                </span>
+            </div>
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in-icon lucide-log-in"><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/></svg>
+            Log In</button>
+        </form>
+    </main>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>

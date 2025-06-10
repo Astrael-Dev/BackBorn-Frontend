@@ -1,0 +1,165 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    animation: slideUp 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* Logo */
+#projectLogo {
+    display: block;
+    margin: 1.5rem auto 0.1rem auto;
+    width: 128px;
+    height: auto;
+    animation: slideUp 0.75s ease-in-out;
+    animation-delay: 0.25s;
+    animation-fill-mode: both;
+}
+
+/* Main Title */
+#ThanksTitle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: clamp(2rem, 8vw, 6rem);
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    padding: 0 1rem;
+}
+
+/* Subtitle */
+#ThanksSubtitle {
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    color: #555;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+    padding: 0 1rem;
+}
+
+/* Main Message */
+#ThanksMessage {
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: #333;
+    margin: 1rem auto;
+    text-align: center;
+    animation: slideUp 1.5s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    padding: 0 1rem;
+}
+
+/* Disclaimer Section */
+#disclaimer {
+    font-weight: 400;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: #777;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    animation: slideUp 2s ease-in-out;
+    animation-delay: 1.25s;
+    animation-fill-mode: both;
+}
+
+.disclaimer-text {
+    font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: #777;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    animation: slideUp 2.5s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+/* Animation for elements sliding up */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design: Tablet */
+@media (max-width: 1000px) {
+    #ThanksMessage,
+    #ThanksTitle,
+    #ThanksSubtitle,
+    #disclaimer,
+    .disclaimer-text {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    #projectLogo {
+        width: 100px;
+    }
+}
+
+/* Responsive Design: Mobile */
+@media (max-width: 700px) {
+    #projectLogo {
+        width: 80px;
+        margin: 1rem auto 0.1rem auto;
+    }
+    #ThanksTitle {
+        font-size: clamp(1.2rem, 10vw, 2.5rem);
+        padding: 0 0.5rem;
+    }
+    #ThanksSubtitle {
+        font-size: clamp(1rem, 6vw, 1.3rem);
+        padding: 0 0.5rem;
+    }
+    #ThanksMessage {
+        font-size: clamp(0.95rem, 5vw, 1.1rem);
+        padding: 0 0.5rem;
+    }
+    #disclaimer,
+    .disclaimer-text {
+        font-size: clamp(0.8rem, 4vw, 1rem);
+        padding: 0 0.5rem;
+    }
+}
+
+/* Responsive Design: Small Mobile */
+@media (max-width: 480px) {
+    #projectLogo {
+        width: 48px;
+    }
+    #ThanksTitle {
+        font-size: 1.1rem;
+        padding: 0 0.25rem;
+    }
+    #ThanksSubtitle,
+    #ThanksMessage,
+    #disclaimer,
+    .disclaimer-text {
+        font-size: 0.9rem;
+        padding: 0 0.25rem;
+    }
+}

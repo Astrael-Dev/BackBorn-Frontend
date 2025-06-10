@@ -1,0 +1,170 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base layout and background */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+/* Logo and title */
+#projectLogo {
+    display: block;
+    margin: 1.5rem auto 0.5rem auto;
+    width: 128px;
+    height: auto;
+    animation: slideUp 0.75s ease-in-out;
+    animation-delay: 0.25s;
+    animation-fill-mode: both;
+}
+
+#LogInTitle {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+/* Login form container */
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+}
+
+/* Inputs and button styles */
+.login-flex input,
+.login-flex button {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    font-size: 1rem;
+}
+
+/* Password field with toggle icon */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+    width: 100%;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+}
+.toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #888;
+}
+.toggle-password svg {
+    width: 24px;
+    height: 24px;
+}
+.toggle-password:hover {
+    color: #2AAA8A;
+}
+
+/* Login button */
+.login-flex button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.login-flex button:hover {
+    background: #2AAA8A;
+}
+
+/* Animation for sliding up */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+
+/* Responsive Design : Tablet */
+@media (max-width: 1000px) {
+    .login-flex {
+        max-width: 98vw;
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+    #projectLogo {
+        width: 100px;
+    }
+}
+
+/* Responsive Design : Mobile */
+@media (max-width: 700px) {
+    .login-flex {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    #projectLogo {
+        width: 80px;
+    }
+}
+
+/* Responsive Design : Small Mobile */
+@media (max-width: 480px) {
+    .login-flex {
+        padding: 0.5rem;
+        border-radius: 8px;
+    }
+    #projectLogo {
+        width: 48px;
+    }
+    #LogInTitle {
+        font-size: 1.1rem;
+        padding: 0 0.25rem;
+    }
+    .login-flex input,
+    .login-flex button {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.7rem;
+    }
+}

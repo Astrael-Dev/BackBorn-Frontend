@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackBorn - Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/signup.css">
+    <link rel="icon" type="image/png" href="../assets/img/icon.png">
+</head>
+<body>
+    <main>
+        <img id="projectLogo" src="../assets/img/icon.png" alt="Project Logo">
+        <h1 id="SignUpTitle">Sign Up for <strong>BackBorn</strong></h1>
+        <form id="signupForm" enctype="multipart/form-data" class="signup-flex">
+            <div class="signup-left">
+                <input type="text" name="username" placeholder="Username" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <div class="password-wrapper">
+                    <input type="password" name="password" placeholder="Password" required id="passwordInput" />
+                    <span class="toggle-password" id="togglePassword">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-closed-icon lucide-eye-closed"><path d="m15 18-.722-3.25"/><path d="M2 8a10.645 10.645 0 0 0 20 0"/><path d="m20 15-1.726-2.05"/><path d="m4 15 1.726-2.05"/><path d="m9 18 .722-3.25"/></svg>
+                    </span>
+                </div>
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool-icon lucide-pen-tool"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg>
+                Sign Up</button>
+            </div>
+            <div class="signup-right">
+                <label for="profile_picture" class="image-circle" id="imageCircle">
+                    <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <input type="file" id="profile_picture" name="profile_picture" accept="image/*" style="display:none" />
+                </label>
+                <div class="insert-img">Insert an image</div>
+            </div>
+        </form>
+    </main>
+    <script src="../assets/js/signup.js"></script>
+</body>
+</html>
