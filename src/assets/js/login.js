@@ -1,3 +1,5 @@
+import { API_URL } from "../../config.js";
+
 // Password visibility toggle (same as before)
 const toggleLoginPassword = document.getElementById('toggleLoginPassword');
 const loginPasswordInput = document.getElementById('loginPasswordInput');
@@ -51,7 +53,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     };
 
     try {
-        const response = await fetch('http://localhost:3000/api/login', {
+        const response = await fetch(`${API_URL}/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

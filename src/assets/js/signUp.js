@@ -1,3 +1,5 @@
+import { API_URL } from "../../config.js"; 
+
 const imageCircle = document.getElementById('imageCircle');
 const fileInput = document.getElementById('profile_picture');
 
@@ -31,7 +33,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('http://localhost:3000/api/signup', {
+        const response = await fetch(`${API_URL}/signup`, {
             method: 'POST',
             body: formData
         });
