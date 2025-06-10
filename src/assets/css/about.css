@@ -45,7 +45,7 @@ header {
     font-weight: 400;
     font-size: clamp(1.1rem, 3vw, 2rem);
     color: #555;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     animation: slideUp 1s ease-in-out;
     animation-delay: 0.75s;
