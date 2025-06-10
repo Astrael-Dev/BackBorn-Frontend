@@ -2,6 +2,6 @@
 const API_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:10000/api"
-    : "https://your-production-domain.com/api";
+    : "https://backborn-backend.onrender.com/api";
 
 export { API_URL };
