@@ -73,14 +73,14 @@ body {
 .password-wrapper input[type="password"],
 .password-wrapper input[type="text"] {
     width: 100%;
-    padding-right: 2.5rem;
+    padding-right: 2.5rem; /* space for the icon */
     box-sizing: border-box;
 }
 .toggle-password {
     position: absolute;
     right: 0.75rem;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -90,8 +90,10 @@ body {
     width: 24px;
     height: 24px;
 }
+
 .toggle-password:hover {
     color: #2AAA8A;
+    cursor: pointer;
 }
 
 /* Login button */
