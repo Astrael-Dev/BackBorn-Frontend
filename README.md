@@ -6,7 +6,8 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-v1.0.0-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-v1.0.0-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-v1.0.0-F7DF1E?logo=javascript&logoColor=black)
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="28" height="28" style="vertical-align:middle; margin-left:8px;" />
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ---
