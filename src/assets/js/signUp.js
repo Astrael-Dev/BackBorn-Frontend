@@ -31,7 +31,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('http://localhost:10000/api/signup', {
+        const response = await fetch('https://backborn-backend.onrender.com/api/signup', {
             method: 'POST',
             body: formData
         });
