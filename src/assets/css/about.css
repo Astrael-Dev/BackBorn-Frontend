@@ -53,19 +53,6 @@ header {
     padding: 0 1rem;
 }
 
-main .dev-pic {
-    display: block;
-    margin: 1.5rem auto 1rem auto;
-    width: 256px;
-    height: 256px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #2AAA8A;
-    animation: slideUp 0.75s ease-in-out;
-    animation-delay: 0.25s;
-    animation-fill-mode: both;
-}
-
 /* Section Base Styles */
 section {
     border-top: #bdbdbd solid 1px;
